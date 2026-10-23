@@ -1,0 +1,9 @@
+# Configuration settings for the MariaDB server (mysqld)
+[mysqld]
+
+# Listen on all network interfaces so WordPress can connect
+# from its own container over the Docker network.
+bind-address = 0.0.0.0
+
+# Default MariaDB port.
+port = 3306
